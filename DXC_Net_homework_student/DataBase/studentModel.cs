@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace DXC_Net_homework_student.DataBase
+namespace DXC_Net_homework_student
 {
     internal class studentModel
     {

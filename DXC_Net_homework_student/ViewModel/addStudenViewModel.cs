@@ -1,4 +1,4 @@
-using DXC_Net_homework_student.DataBase;
+using DXC_Net_homework_student;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace DXC_Net_homework_student.ViewModel
+namespace DXC_Net_homework_student
 {
     internal class addStudenViewModel : ViewModelBase
     {

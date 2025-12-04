@@ -1,4 +1,4 @@
-using DXC_Net_homework_student.ViewModel;
+using DXC_Net_homework_student;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +29,7 @@ namespace DXC_Net_homework_student
             InitializeComponent();
             
             // 初始化ViewModel
-            _viewModel = new addStudenViewModel(this);
+            _viewModel = new addStudenViewModel(this);//窗口指针传过去，点击取消后隐藏窗口
             this.DataContext = _viewModel;
         }
     

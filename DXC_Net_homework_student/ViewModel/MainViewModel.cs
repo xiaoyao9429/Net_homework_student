@@ -1,4 +1,4 @@
-using DXC_Net_homework_student.DataBase;
+using DXC_Net_homework_student;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,13 +13,18 @@ namespace DXC_Net_homework_student
 {
     internal class MainViewModel :  ViewModelBase
     {
-        public event NotifyCollectionChangedEventHandler CollectionChanged;
-
         private addStudentWindow _addStudentWidonw;
+        private ObservableCollection<student> _studentList;//所有学生的信息，展示在UI界面中
+        private student _selectedStudent;//当前选中的学生，用于更新学生的信息
+        private bool _isAllSelected; // 是否全选
 
         private ICommand _addStuCommand;//添加学生命令
         private ICommand _deleteStuCommand;//删除学生命令
         private ICommand _updateStuCommand;//更新学生信息命令
+        private ICommand _refreshStuCommand;//刷新主窗口命令
+        private ICommand _searchStuCommand;//根据条件检索学生命令
+        private ICommand _selectAllCommand;//全选学生命令
+      
 
 
         public MainViewModel() {
@@ -28,13 +33,70 @@ namespace DXC_Net_homework_student
             
             AddStuCommand = new RelayCommand(OpenAddStudentWindow);
             UpdateStuCommand = new RelayCommand(UpdateStudent);
+            RefreshCommand= new RelayCommand(RefreshList);
+            SearchCommand = new RelayCommand(SearchStudent);
+            DeleteStuCommand = new RelayCommand(DeleteSelectedStudents);
+            SelectAllCommand = new RelayCommand(SelectAllStudent);
 
             // 加载学生数据
             LoadStudents();
         }
+        
+
+        public void  SelectAllStudent(object parameter)
+        {
+           
+            if (IsAllSelected == true) {
+                foreach (var item in StudentList)
+                {
+                    item.IsSelected = true;
+                }
+
+            }
+
+            else
+            {
+              //todo
+            }
+         
+
+        }
 
 
-        private ObservableCollection<student> _studentList;
+
+        /// <summary>
+        /// 是否全选
+        /// </summary>
+        public bool IsAllSelected
+        {
+            get { return _isAllSelected; }
+            set
+            {
+                _isAllSelected = value;
+                // 更新所有学生的选中状态
+                //foreach (var student in StudentList)
+                //{
+                //    student.IsSelected = true;
+                //}
+                OnPropertyChanged();
+            }
+        }
+
+        /// <summary>
+        /// 选中的学生对象
+        /// </summary>
+        public student SelectedStudent
+        {
+            get { return _selectedStudent; }
+            set
+            {
+                _selectedStudent = value;
+                OnPropertyChanged();
+            }
+        }
+
+
+      
 
         /// <summary>
         /// 学生数据集合
@@ -67,23 +129,36 @@ namespace DXC_Net_homework_student
         /// <summary>
         /// 更新学生信息
         /// </summary>
-        /// <param name="parameter">选中的学生对象</param>
+        /// <param name="parameter">命令参数</param>
         private void UpdateStudent(object parameter)
         {
-            if (parameter is student studentToUpdate)
+            // 使用SelectedStudent属性获取当前选中的学生对象
+            if (SelectedStudent != null)
             {
                 try
                 {
                     studentModel model = new studentModel();
-                    model.updateStudent(studentToUpdate);
+                    model.updateStudent(SelectedStudent);
                     // 更新成功后刷新学生列表
                     LoadStudents();
+                    // 显示更新成功提示
+                    System.Windows.MessageBox.Show("学生信息更新成功！");
                 }
                 catch (Exception ex)
                 {
                     Console.WriteLine("更新学生信息失败: " + ex.Message);
+                    System.Windows.MessageBox.Show("更新学生信息失败: " + ex.Message);
                 }
             }
+            else
+            {
+                System.Windows.MessageBox.Show("请先选择要修改的学生信息！");
+            }
+        }
+
+        public void SearchStudent(object parameter)
+        {
+            
         }
 
         /// <summary>
@@ -112,7 +187,73 @@ namespace DXC_Net_homework_student
             }
         }
 
+        public void RefreshList(object parameter)
+        { 
+            LoadStudents();
+        }
+        
+        /// <summary>
+        /// 删除选中的学生
+        /// </summary>
+        /// <param name="parameter">命令参数</param>
+        private void DeleteSelectedStudents(object parameter)
+        {
+            try
+            {
+                // 获取所有被选中的学生
+                var selectedStudents = StudentList.Where(s => s.IsSelected).ToList();
+                
+                if (selectedStudents.Count == 0)
+                {
+                    System.Windows.MessageBox.Show("请先选择要删除的学生！");
+                    return;
+                }
+                
+                // 显示确认对话框
+                var result = System.Windows.MessageBox.Show(
+                    $"确定要删除选中的{selectedStudents.Count}名学生吗？", 
+                    "确认删除", 
+                    System.Windows.MessageBoxButton.YesNo,
+                    System.Windows.MessageBoxImage.Warning);
+                
+                if (result == System.Windows.MessageBoxResult.Yes)
+                {
+                    studentModel model = new studentModel();
+                    int deletedCount = 0;
+                    
+                    // 逐个删除学生
+                    foreach (var student in selectedStudents)
+                    {
+                        model.deleteStudent(student.Id);
+                        deletedCount++;
+                    }
+                    
+                    // 重新加载学生列表
+                    LoadStudents();
+                    
+                    // 重置全选状态
+                    _isAllSelected = false;
+                    OnPropertyChanged("IsAllSelected");
+                    
+                    System.Windows.MessageBox.Show($"成功删除{deletedCount}名学生！");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("删除学生失败: " + ex.Message);
+                System.Windows.MessageBox.Show("删除学生失败: " + ex.Message);
+            }
+        }
 
+        public ICommand SelectAllCommand
+        {
+            get{return _selectAllCommand;}
+
+            set
+            {
+                _selectAllCommand = value;
+            }
+        }
 
 
         public ICommand AddStuCommand
@@ -129,6 +270,24 @@ namespace DXC_Net_homework_student
             set
             {
                 _deleteStuCommand = value;
+            }
+        }
+
+        public ICommand RefreshCommand
+        {
+            get { return _refreshStuCommand; }
+            set
+            {
+                _refreshStuCommand = value;
+            }
+        }
+
+        public ICommand SearchCommand
+        {
+            get { return _searchStuCommand; }
+            set
+            {
+                _searchStuCommand = value;
             }
         }
 
