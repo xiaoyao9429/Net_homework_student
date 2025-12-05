@@ -18,27 +18,26 @@ namespace DXC_Net_homework_student
             InitializeComponent();
             this.DataContext = _mainViewModel;
         }
-        
-        // 当学生复选框被选中时
-        private void StudentCheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-            CheckAllSelectedState();
-        }
-        
-        // 当学生复选框被取消选中时
-        private void StudentCheckBox_Unchecked(object sender, RoutedEventArgs e)
-        {
-          
-        }
-        
-        // 检查所有学生的选中状态，并更新全选复选框
-        private void CheckAllSelectedState()
-        {
-           
-        }
-        
-      
 
-     
+
+
+
+        // 双击学生
+        private void dgStudents_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            DataGrid dataGrid = sender as DataGrid;
+            if (dataGrid != null && dataGrid.SelectedItem != null)
+            {
+                student selectedStudent = dataGrid.SelectedItem as student;
+                if (selectedStudent != null)
+                {
+                    // 切换选中状态
+                    selectedStudent.IsSelected =true;
+                }
+            }
+        }
+
+
+
     }
 }

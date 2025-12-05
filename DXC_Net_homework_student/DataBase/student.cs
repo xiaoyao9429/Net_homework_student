@@ -32,6 +32,7 @@ namespace DXC_Net_homework_student
             get { return _isSelected; }
             set { 
                 _isSelected = value;
+                Console.WriteLine($"学生 {Name} 的IsSelected属性变化: {_isSelected} -> {value}");
                 OnPropertyChanged();
                
             }

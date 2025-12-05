@@ -90,8 +90,8 @@
             <Grid>
                 <DataGrid x:Name="dgStudents" AutoGenerateColumns="False" 
                          CanUserAddRows="False" CanUserDeleteRows="False"
-                         SelectionMode="Single" IsReadOnly="False" ItemsSource="{Binding StudentList}"
-                         SelectedItem="{Binding SelectedStudent}">
+                         SelectionMode="Extended" IsReadOnly="False" ItemsSource="{Binding StudentList}"
+                         SelectedItem="{Binding Student}"   MouseDoubleClick="dgStudents_MouseDoubleClick" >
                     <DataGrid.Columns>
                         <!-- 选择列 -->
                         <DataGridTemplateColumn Width="30">
@@ -100,7 +100,8 @@
                             </DataGridTemplateColumn.Header>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <CheckBox IsChecked="{Binding IsSelected}" Checked="StudentCheckBox_Checked" Unchecked="StudentCheckBox_Unchecked"/>
+                                    <CheckBox IsChecked="{Binding IsSelected}" Command="{Binding DataContext.SelectCommand, 
+                      RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"/>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
