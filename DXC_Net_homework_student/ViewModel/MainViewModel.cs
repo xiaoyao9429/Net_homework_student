@@ -12,8 +12,13 @@ using System.Windows.Input;
 
 namespace DXC_Net_homework_student
 {
-    internal class MainViewModel :  ViewModelBase
+    internal partial class MainViewModel :  ViewModelBase
     {
+
+        private string _searchStudentId; // 搜索学生ID
+        private List<int> _suggestedStudentIds; // 模糊匹配的学生ID列表
+        private int? _selectedSuggestedId; // 选中的建议ID
+
         private addStudentWindow _addStudentWidonw;
         private ObservableCollection<student> _studentList;//所有学生的信息，展示在UI界面中
         private student _Student;//当前选中的学生，用于更新学生的信息
@@ -26,12 +31,16 @@ namespace DXC_Net_homework_student
         private ICommand _searchStuCommand;//根据条件检索学生命令
         private ICommand _selectAllCommand;//全选学生命令
         private ICommand _selectCommand;//单选学生命令
+        private ICommand _selectSuggestedIdCommand;//选择建议ID命令
 
-       
+    
+
         public MainViewModel() {
-            // 初始化学生集合
-            StudentList = new ObservableCollection<student>();
             
+            StudentList = new ObservableCollection<student>();// 初始化学生集合（此时无数据，只是生成实例对象）
+            SuggestedStudentIds = new List<int>();//初始化建议ID集合（此时无数据，只是生成实例对象）
+
+
             AddStuCommand = new RelayCommand(OpenAddStudentWindow);
             UpdateStuCommand = new RelayCommand(UpdateStudent);
             RefreshCommand= new RelayCommand(RefreshList);
@@ -39,11 +48,46 @@ namespace DXC_Net_homework_student
             DeleteStuCommand = new RelayCommand(DeleteSelectedStudents);
             SelectAllCommand = new RelayCommand(SelectAllStudent);
             SelectCommand = new RelayCommand(SelectStudent);
+            SelectSuggestedIdCommand = new RelayCommand(SelectSuggestedId);
+
 
             // 加载学生数据
             LoadStudents();
         }
+
+        public List<int> SuggestedStudentIds
+        {
+            get { return _suggestedStudentIds; }
+            set
+            {
+                _suggestedStudentIds = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string SearchStudentId
+        {
+            get { return _searchStudentId; }
+            set
+            {
+                _searchStudentId = value;
+                OnPropertyChanged();
+                // 当搜索ID变化时，更新建议列表
+                UpdateSuggestedStudentIds();
+            }
+        }
+
         
+
+        public int? SelectedSuggestedId
+        {
+            get { return _selectedSuggestedId; }
+            set
+            {
+                _selectedSuggestedId = value;
+                OnPropertyChanged();
+            }
+        }
 
         public void  SelectAllStudent(object parameter)
         {
@@ -296,6 +340,11 @@ namespace DXC_Net_homework_student
             }
         }
 
+        public ICommand SelectSuggestedIdCommand
+        {
+            get { return _selectSuggestedIdCommand; }
+            set { _selectSuggestedIdCommand = value; }
+        }
         public ICommand SelectCommand
         {
             get { return _selectCommand; }

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>DXC_Net_homework_student</RootNamespace>
     <AssemblyName>DXC_Net_homework_student</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -63,6 +63,7 @@
     </ApplicationDefinition>
     <Compile Include="DataBase\DBConnect.cs" />
     <Compile Include="DataBase\studentModel.cs" />
+    <Compile Include="IntToVisibilityConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -70,6 +71,7 @@
     <Compile Include="DataBase\student.cs" />
     <Compile Include="ViewModel\addStudenViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\MainVM_Method.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\addStudentWindow.xaml.cs">
       <DependentUpon>addStudentWindow.xaml</DependentUpon>
