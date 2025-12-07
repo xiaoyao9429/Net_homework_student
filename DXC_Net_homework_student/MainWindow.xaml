@@ -40,7 +40,18 @@
                 <!-- 第一行检索条件 -->
                 <StackPanel Grid.Row="0" Grid.Column="0" Margin="5">
                     <TextBlock Text="学生ID" Margin="0,0,0,2"/>
-                    <TextBox x:Name="txtStudentId" Height="25"/>
+                    <TextBox x:Name="txtStudentId" Height="25" Text="{Binding SearchStudentId, UpdateSourceTrigger=PropertyChanged}"/>
+                    <ListBox x:Name="lstSuggestedIds" Margin="0,0,0,0" Height="100" 
+                             Visibility="{Binding SuggestedStudentIds.Count, Converter={StaticResource IntToVisibilityConverter}}"
+                             ItemsSource="{Binding SuggestedStudentIds}"
+                             SelectedItem="{Binding SelectedSuggestedId}"
+                             SelectionChanged="lstSuggestedIds_SelectionChanged"><!--事件-->
+                        <ListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="Cursor" Value="Hand"/>
+                            </Style>
+                        </ListBox.ItemContainerStyle>
+                    </ListBox>
                 </StackPanel>
 
                 <StackPanel Grid.Row="0" Grid.Column="1" Margin="5">

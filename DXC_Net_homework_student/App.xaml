@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:DXC_Net_homework_student"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+     
     </Application.Resources>
 </Application>

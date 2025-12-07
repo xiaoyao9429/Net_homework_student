@@ -6,14 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
-using DXC_Net_homework_student;
 
 namespace DXC_Net_homework_student
 {
     /// <summary>
     /// 将整数转换为可见性的转换器
     /// </summary>
-    public class IntToVisibilityConverter : IValueConverter
+    public class IntToVisibilityConverter :IValueConverter
     {
         /// <summary>
         /// 将整数转换为可见性

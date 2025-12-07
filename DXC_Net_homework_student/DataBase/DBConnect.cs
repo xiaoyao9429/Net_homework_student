@@ -53,28 +53,5 @@ namespace DXC_Net_homework_student
         }
 
 
-
-
-        public void temp() {
-            SqlConnection mconn = new SqlConnection();
-            SqlCommand mcmd = new SqlCommand();
-            mconn.ConnectionString = "Server=localhost;Database=TestDB;Trusted_Connection=true";
-            mconn.Open();
-            mcmd.Connection = mconn;
-            mcmd.CommandText = "select * from student";
-       
-            SqlDataAdapter mda = new SqlDataAdapter();
-            mda.SelectCommand = mcmd;
-            DataSet ds = new DataSet();
-            mda.Fill(ds);
-            mconn.Close();
-            DataTable dt = ds.Tables[0];
-
-            int a = 10;
-        }
-
-
-
-
     }
 }

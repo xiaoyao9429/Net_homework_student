@@ -61,17 +61,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="PublicTool\IntToVisibilityConverter.cs" />
     <Compile Include="DataBase\DBConnect.cs" />
     <Compile Include="DataBase\studentModel.cs" />
-    <Compile Include="IntToVisibilityConverter.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RelayCommand.cs" />
+    <Compile Include="PublicTool\RelayCommand.cs" />
     <Compile Include="DataBase\student.cs" />
     <Compile Include="ViewModel\addStudenViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\MainVM_Method.cs" />
+    <Compile Include="ViewModel\MainVM_Command.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\addStudentWindow.xaml.cs">
       <DependentUpon>addStudentWindow.xaml</DependentUpon>

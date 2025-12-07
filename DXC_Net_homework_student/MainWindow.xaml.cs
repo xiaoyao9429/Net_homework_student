@@ -37,7 +37,16 @@ namespace DXC_Net_homework_student
             }
         }
 
-
+        // 选择建议的学生ID
+        private void lstSuggestedIds_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListBox listBox = sender as ListBox;
+            if (listBox != null && listBox.SelectedItem != null)
+            {
+                int selectedId = (int)listBox.SelectedItem;
+                _mainViewModel.SelectSuggestedId(selectedId);
+            }
+        }
 
     }
 }
