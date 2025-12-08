@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Release\
 DXC_Net_homework_student
 none
 false
-DEBUG;TRACE
+TRACE
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\App.xaml
 2-1522229588
 
-17-1388030598
+181921717889
 14-86346854
 MainWindow.xaml;View\addStudentWindow.xaml;
 

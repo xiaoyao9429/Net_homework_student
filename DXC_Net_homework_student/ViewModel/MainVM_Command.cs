@@ -9,6 +9,12 @@ namespace DXC_Net_homework_student
 {
     internal partial class MainViewModel
     {
+
+        public ICommand SearchStuCommand
+        {
+            get { return _searchStuCommand; }
+            set { _searchStuCommand = value; }
+        }
         public ICommand SelectSuggestedIdCommand
         {
             get { return _selectSuggestedIdCommand; }

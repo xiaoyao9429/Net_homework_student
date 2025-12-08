@@ -27,6 +27,7 @@ D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\MainWindow.g.cs
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\View\addStudentWindow.g.cs
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\App.g.cs
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_homework_student_MarkupCompile.cache
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_homework_student_MarkupCompile.lref
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\MainWindow.baml
@@ -38,4 +39,3 @@ D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_.512B94F4.Up2Date
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_homework_student.exe
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_homework_student.pdb
-D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\GeneratedInternalTypeHelper.g.cs

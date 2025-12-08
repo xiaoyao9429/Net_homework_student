@@ -8,6 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Media;
 namespace DXC_Net_homework_student
 {
+
     public partial  class MainWindow:Window
     {
         private MainViewModel _mainViewModel;

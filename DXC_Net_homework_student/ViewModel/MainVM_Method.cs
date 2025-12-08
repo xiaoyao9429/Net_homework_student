@@ -9,6 +9,50 @@ namespace DXC_Net_homework_student
     internal  partial class MainViewModel
     {
 
+        private void SearchStudent(object parameter)
+        {
+            try
+            {
+                // 检查SearchStudentId是否为空或空白
+                if (string.IsNullOrWhiteSpace(SearchStudentId))
+                {
+                    System.Windows.MessageBox.Show("请输入要检索的学生ID！");
+                    return;
+                }
+
+                // 尝试将SearchStudentId转换为整数
+                if (!int.TryParse(SearchStudentId, out int searchId))
+                {
+                    System.Windows.MessageBox.Show("请输入有效的学生ID！");
+                    return;
+                }
+
+                // 从数据库加载所有学生数据
+                studentModel model = new studentModel();
+                List<student> allStudents = model.GetAllStudents();
+
+                // 过滤出匹配ID的学生
+                var filteredStudents = allStudents.Where(s => s.Id == searchId).ToList();
+
+                // 清空现有列表并添加过滤后的学生
+                StudentList.Clear();
+                foreach (var student in filteredStudents)
+                {
+                    StudentList.Add(student);
+                }
+
+                // 如果没有找到匹配的学生，显示提示
+                if (StudentList.Count == 0)
+                {
+                    System.Windows.MessageBox.Show("未找到ID为" + searchId + "的学生！");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("检索学生失败: " + ex.Message);
+                System.Windows.MessageBox.Show("检索学生失败: " + ex.Message);
+            }
+        }
         private void OpenAddStudentWindow(object parameter)
         {
             _addStudentWidonw = new addStudentWindow();
