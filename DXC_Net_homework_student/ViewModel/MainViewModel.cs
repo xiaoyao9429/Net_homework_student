@@ -32,6 +32,7 @@ namespace DXC_Net_homework_student
         private ICommand _selectCommand;//单选学生命令
         private ICommand _selectSuggestedIdCommand;//选择建议ID命令
         private ICommand _searchStuCommand;//检索学生命令
+        private ICommand _loadToExcelCommand;//导出学生信息为Excel的命令
 
 
         public MainViewModel()
@@ -49,6 +50,7 @@ namespace DXC_Net_homework_student
             SelectCommand = new RelayCommand(SelectStudent);
             SelectSuggestedIdCommand = new RelayCommand(SelectSuggestedId);
             SearchStuCommand = new RelayCommand(SearchStudent);
+            LoadToExcelCommand = new RelayCommand(LoadExcelData);
 
 
             // 加载学生数据

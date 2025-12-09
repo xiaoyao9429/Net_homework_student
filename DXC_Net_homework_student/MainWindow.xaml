@@ -67,25 +67,36 @@
                 </StackPanel>
 
                 <StackPanel Grid.Row="0" Grid.Column="3" Margin="5">
-                    <TextBlock Text="科目" Margin="0,0,0,2"/>
+                    <TextBlock Text="性别" Margin="0,0,0,2"/>
                     <ComboBox x:Name="cmbSubject" Height="25">
                         <ComboBoxItem Content="(空白)"/>
-                        <ComboBoxItem Content="语文"/>
-                        <ComboBoxItem Content="数学"/>
-                        <ComboBoxItem Content="英语"/>
-                        <ComboBoxItem Content="总分"/>
+                        <ComboBoxItem Content="男"/>
+                        <ComboBoxItem Content="女"/>
                     </ComboBox>
                 </StackPanel>
 
                 <!-- 第二行检索条件 - 分数范围 -->
-                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" 
-                           Orientation="Horizontal" Margin="5">
-                    <TextBlock Text="分数范围:" VerticalAlignment="Center" Margin="0,0,5,0"/>
-                    <TextBox x:Name="txtMinScore" Width="60" Height="25" 
-                            ToolTip="最小分数"/>
-                    <TextBlock Text="~" VerticalAlignment="Center" Margin="5,0,5,0"/>
-                    <TextBox x:Name="txtMaxScore" Width="60" Height="25" 
-                            ToolTip="最大分数"/>
+                <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" Margin="5" VerticalAlignment="Top">
+                    <!-- 科目 -->
+                    <StackPanel Margin="0,0,10,0">
+                        <TextBlock Text="科目:" Margin="0,0,5,2" HorizontalAlignment="Left"/>
+                        <ComboBox x:Name="cmb" Height="25" Width="120">
+                            <ComboBoxItem Content="(空白)"/>
+                            <ComboBoxItem Content="语文"/>
+                            <ComboBoxItem Content="数学"/>
+                            <ComboBoxItem Content="英语"/>
+                        </ComboBox>
+                    </StackPanel>
+                    
+                    <!-- 分数范围 -->
+                    <StackPanel Margin="15,0,0,0">
+                        <TextBlock Text="分数范围:" Margin="0,0,5,2" HorizontalAlignment="Left"/>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBox x:Name="txtMinScore" Width="50" Height="25" Margin="0,0,5,0" ToolTip="最小分数"/>
+                            <TextBlock Text="~" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                            <TextBox x:Name="txtMaxScore" Width="50" Height="25" ToolTip="最大分数" />
+                        </StackPanel>
+                    </StackPanel>
                 </StackPanel>
 
                 <!-- 刷新按钮 -->
@@ -152,7 +163,7 @@
             <Button x:Name="btnAdd" Content="新增" Width="80" Height="30" Margin="5" Command="{Binding AddStuCommand}"/>
             <Button x:Name="btnEdit" Content="修改" Width="80" Height="30" Margin="5" Command="{Binding UpdateStuCommand}" />
             <Button x:Name="btnDelete" Content="删除" Width="80" Height="30" Margin="5" Command="{Binding DeleteStuCommand}"/>
-            <Button x:Name="btnExport" Content="导出Excel" Width="80" Height="30" Margin="5"/>
+            <Button x:Name="btnExport" Content="导出Excel" Width="80" Height="30" Margin="5" Command="{Binding LoadToExcelCommand}"/>
         </StackPanel>
     </Grid>
 

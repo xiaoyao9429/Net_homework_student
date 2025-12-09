@@ -9,7 +9,10 @@ namespace DXC_Net_homework_student
 {
     internal partial class MainViewModel
     {
-
+        public ICommand LoadToExcelCommand {
+            get { return _loadToExcelCommand; }
+            set { _loadToExcelCommand = value; }
+        }
         public ICommand SearchStuCommand
         {
             get { return _searchStuCommand; }

@@ -9,6 +9,164 @@ namespace DXC_Net_homework_student
     internal  partial class MainViewModel
     {
 
+        private void LoadExcelData(object parameter)
+        {
+            try
+            {
+                // 获取所有被选中的学生
+                var selectedStudents = StudentList.Where(s => s.IsSelected).ToList();
+
+                if (selectedStudents.Count == 0)
+                {
+                    System.Windows.MessageBox.Show("请先选择要导出的学生！");
+                    return;
+                }
+
+                // 准备导出路径和文件名
+                string projectPath = System.AppDomain.CurrentDomain.BaseDirectory;
+                // 向上移动两级目录，到达项目同级目录
+                string exportPath = System.IO.Path.GetFullPath(System.IO.Path.Combine(projectPath, "..", ".."));
+                string fileName = "学生数据_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".xlsx";
+                string fullPath = System.IO.Path.Combine(exportPath, fileName);
+
+                // 尝试使用EPPlus导出Excel
+                bool exportSuccess = ExportToExcelUsingEPPlus(selectedStudents, fullPath);
+                
+                if (!exportSuccess)
+                {
+                    System.Windows.MessageBox.Show("无法使用EPPlus库导出Excel文件，请检查是否已安装该库。");
+                    // 如果EPPlus不可用，尝试导出为CSV
+                    fileName = "学生数据_" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".csv";
+                    fullPath = System.IO.Path.Combine(exportPath, fileName);
+                    ExportToCSV(selectedStudents, fullPath);
+                }
+
+                System.Windows.MessageBox.Show($"成功导出{selectedStudents.Count}名学生的数据到文件：{fullPath}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("导出学生数据失败: " + ex.Message);
+                System.Windows.MessageBox.Show("导出学生数据失败: " + ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 使用EPPlus库导出数据到Excel
+        /// </summary>
+        /// <param name="students">要导出的学生列表</param>
+        /// <param name="filePath">导出文件路径</param>
+        /// <returns>导出是否成功</returns>
+        private bool ExportToExcelUsingEPPlus(List<student> students, string filePath)
+        {
+            try
+            {
+                // 尝试加载EPPlus库
+                var epplusAssembly = System.Reflection.Assembly.Load("EPPlus");
+                if (epplusAssembly == null)
+                {
+                    return false;
+                }
+
+                // 使用反射创建Excel文件
+                dynamic package = Activator.CreateInstance(epplusAssembly.GetType("OfficeOpenXml.ExcelPackage"));
+                dynamic worksheet = package.Workbook.Worksheets.Add("学生数据");
+
+                // 设置表头
+                string[] headers = { "ID", "姓名", "性别", "出生日期", "电话", "地址", "语文成绩", "数学成绩", "英语成绩" };
+                for (int i = 0; i < headers.Length; i++)
+                {
+                    worksheet.Cells[1, i + 1].Value = headers[i];
+                    // 设置表头样式 - 只保留加粗，去掉背景色设置以避免System.Drawing依赖
+                    worksheet.Cells[1, i + 1].Style.Font.Bold = true;
+                }
+
+                // 填充数据
+                for (int row = 0; row < students.Count; row++)
+                {
+                    var student = students[row];
+                    worksheet.Cells[row + 2, 1].Value = student.Id;
+                    worksheet.Cells[row + 2, 2].Value = student.Name;
+                    worksheet.Cells[row + 2, 3].Value = student.Sex;
+                    worksheet.Cells[row + 2, 4].Value = student.Birthday;
+                    worksheet.Cells[row + 2, 5].Value = student.Phone;
+                    worksheet.Cells[row + 2, 6].Value = student.Address;
+                    worksheet.Cells[row + 2, 7].Value = student.ScoreYW;
+                    worksheet.Cells[row + 2, 8].Value = student.ScoreSX;
+                    worksheet.Cells[row + 2, 9].Value = student.ScoreYY;
+                }
+
+                // 自动调整列宽
+                worksheet.Cells[1, 1, students.Count + 1, 9].AutoFitColumns();
+
+                // 保存文件
+                package.SaveAs(new System.IO.FileInfo(filePath));
+                return true;
+            }
+            catch (Exception)
+            {
+                // EPPlus不可用或导出失败
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// 导出数据到CSV文件
+        /// </summary>
+        /// <param name="students">要导出的学生列表</param>
+        /// <param name="filePath">导出文件路径</param>
+        private void ExportToCSV(List<student> students, string filePath)
+        {
+            // 创建CSV内容
+            StringBuilder csvContent = new StringBuilder();
+            
+            // 添加表头
+            csvContent.AppendLine("ID,姓名,性别,出生日期,电话,地址,语文成绩,数学成绩,英语成绩");
+            
+            // 添加数据行
+            foreach (var student in students)
+            {
+                // 使用逗号分隔字段，对于包含逗号的字段需要用引号包围
+                string[] fields = {
+                    student.Id.ToString(),
+                    EscapeCsvField(student.Name),
+                    EscapeCsvField(student.Sex),
+                    EscapeCsvField(student.Birthday),
+                    EscapeCsvField(student.Phone),
+                    EscapeCsvField(student.Address),
+                    student.ScoreYW.ToString(),
+                    student.ScoreSX.ToString(),
+                    student.ScoreYY.ToString()
+                };
+                csvContent.AppendLine(string.Join(",", fields));
+            }
+            
+            // 写入文件
+            System.IO.File.WriteAllText(filePath, csvContent.ToString(), System.Text.Encoding.UTF8);
+        }
+
+        /// <summary>
+        /// 转义CSV字段中的特殊字符
+        /// </summary>
+        /// <param name="field">要转义的字段</param>
+        /// <returns>转义后的字段</returns>
+        private string EscapeCsvField(string field)
+        {
+            if (string.IsNullOrEmpty(field))
+                return "";
+            
+            // 如果字段包含逗号、引号或换行符，需要用引号包围
+            if (field.Contains(",") || field.Contains("\"") || field.Contains("\n") || field.Contains("\r"))
+            {
+                // 替换字段中的引号为两个引号
+                field = field.Replace("\"", "\"\"");
+                // 用引号包围字段
+                field = "\"" + field + "\"";
+            }
+            
+            return field;
+        }
+
+
         private void SearchStudent(object parameter)
         {
             try
