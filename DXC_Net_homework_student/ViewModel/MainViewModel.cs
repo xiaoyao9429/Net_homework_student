@@ -18,6 +18,11 @@ namespace DXC_Net_homework_student
         private string _searchStudentId; // 搜索学生ID
         private List<int> _suggestedStudentIds; // 模糊匹配的学生ID列表
         private int? _selectedSuggestedId; // 选中的建议ID
+        
+        private string _searchStudentName; // 搜索学生姓名
+        private List<string> _suggestedStudentNames; // 模糊匹配的学生姓名列表
+        private string _selectedSuggestedName; // 选中的建议姓名
+        private string _searchStudentSex; // 搜索学生性别
 
         private addStudentWindow _addStudentWidonw;
         private ObservableCollection<student> _studentList;//所有学生的信息，展示在UI界面中
@@ -30,9 +35,11 @@ namespace DXC_Net_homework_student
         private ICommand _refreshStuCommand;//刷新主窗口命令
         private ICommand _selectAllCommand;//全选学生命令
         private ICommand _selectCommand;//单选学生命令
-        private ICommand _selectSuggestedIdCommand;//选择建议ID命令
+        private ICommand _selectSuggestedIdCommand;//选择建议ID命令(没用到)
+        private ICommand _selectSuggestedNameCommand;//选择建议姓名命令(没用到)
         private ICommand _searchStuCommand;//检索学生命令
         private ICommand _loadToExcelCommand;//导出学生信息为Excel的命令
+        
 
 
         public MainViewModel()
@@ -40,6 +47,7 @@ namespace DXC_Net_homework_student
 
             StudentList = new ObservableCollection<student>();// 初始化学生集合（此时无数据，只是生成实例对象）
             SuggestedStudentIds = new List<int>();//初始化建议ID集合（此时无数据，只是生成实例对象）
+            SuggestedStudentNames = new List<string>();//初始化建议姓名集合（此时无数据，只是生成实例对象）
 
 
             AddStuCommand = new RelayCommand(OpenAddStudentWindow);
@@ -49,6 +57,7 @@ namespace DXC_Net_homework_student
             SelectAllCommand = new RelayCommand(SelectAllStudent);
             SelectCommand = new RelayCommand(SelectStudent);
             SelectSuggestedIdCommand = new RelayCommand(SelectSuggestedId);
+            SelectSuggestedNameCommand = new RelayCommand(SelectSuggestedName);
             SearchStuCommand = new RelayCommand(SearchStudent);
             LoadToExcelCommand = new RelayCommand(LoadExcelData);
 
@@ -76,6 +85,48 @@ namespace DXC_Net_homework_student
                 OnPropertyChanged();
                 // 当搜索ID变化时，更新建议列表
                 UpdateSuggestedStudentIds();
+            }
+        }
+
+        public List<string> SuggestedStudentNames
+        {
+            get { return _suggestedStudentNames; }
+            set
+            {
+                _suggestedStudentNames = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string SearchStudentName
+        {
+            get { return _searchStudentName; }
+            set
+            {
+                _searchStudentName = value;
+                OnPropertyChanged();
+                // 当搜索姓名变化时，更新建议列表
+                UpdateSuggestedStudentNames();
+            }
+        }
+
+        public string SelectedSuggestedName
+        {
+            get { return _selectedSuggestedName; }
+            set
+            {
+                _selectedSuggestedName = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string SearchStudentSex
+        {
+            get { return _searchStudentSex; }
+            set
+            {
+                _searchStudentSex = value;
+                OnPropertyChanged();
             }
         }
 

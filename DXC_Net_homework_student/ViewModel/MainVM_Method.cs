@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -171,26 +171,39 @@ namespace DXC_Net_homework_student
         {
             try
             {
-                // 检查SearchStudentId是否为空或空白
-                if (string.IsNullOrWhiteSpace(SearchStudentId))
-                {
-                    System.Windows.MessageBox.Show("请输入要检索的学生ID！");
-                    return;
-                }
-
-                // 尝试将SearchStudentId转换为整数
-                if (!int.TryParse(SearchStudentId, out int searchId))
-                {
-                    System.Windows.MessageBox.Show("请输入有效的学生ID！");
-                    return;
-                }
+                // 无需检查是否至少输入了一个检索条件
+                // 当所有条件都为空时，将返回所有学生信息
 
                 // 从数据库加载所有学生数据
                 studentModel model = new studentModel();
                 List<student> allStudents = model.GetAllStudents();
 
-                // 过滤出匹配ID的学生
-                var filteredStudents = allStudents.Where(s => s.Id == searchId).ToList();
+                // 构建查询条件
+                var query = allStudents.AsQueryable();
+
+                // 学生ID检索
+                if (!string.IsNullOrWhiteSpace(SearchStudentId))
+                {
+                    if (int.TryParse(SearchStudentId, out int searchId))
+                    {
+                        query = query.Where(s => s.Id == searchId);
+                    }
+                }
+
+                // 学生姓名模糊检索
+                if (!string.IsNullOrWhiteSpace(SearchStudentName))
+                {
+                    query = query.Where(s => s.Name.Equals(SearchStudentName));
+                }
+
+                // 学生性别检索 - 如果性别不为空则根据性别过滤，为空则忽略性别条件
+                if (!string.IsNullOrWhiteSpace(SearchStudentSex))
+                {
+                    query = query.Where(s => s.Sex == SearchStudentSex);
+                }
+
+                // 执行查询
+                var filteredStudents = query.ToList();
 
                 // 清空现有列表并添加过滤后的学生
                 StudentList.Clear();
@@ -202,7 +215,7 @@ namespace DXC_Net_homework_student
                 // 如果没有找到匹配的学生，显示提示
                 if (StudentList.Count == 0)
                 {
-                    System.Windows.MessageBox.Show("未找到ID为" + searchId + "的学生！");
+                    System.Windows.MessageBox.Show("未找到符合条件的学生！");
                 }
             }
             catch (Exception ex)
@@ -456,6 +469,53 @@ namespace DXC_Net_homework_student
             catch (Exception ex)
             {
                 Console.WriteLine("更新建议学生ID列表失败: " + ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 更新建议学生姓名列表
+        /// </summary>
+        private void UpdateSuggestedStudentNames()
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(SearchStudentName))
+                {
+                    SuggestedStudentNames = new List<string>();
+                    return;
+                }
+
+                studentModel model = new studentModel();
+                List<student> allStudents = model.GetAllStudents();
+                
+                // 模糊匹配学生姓名
+                List<string> suggestedNames = allStudents
+                    .Where(s => s.Name.StartsWith(SearchStudentName))
+                    .Select(s => s.Name)
+                    .Distinct() // 去重
+                    .ToList();
+
+                SuggestedStudentNames = suggestedNames;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("更新建议学生姓名列表失败: " + ex.Message);
+            }
+        }
+
+        /// <summary>
+        /// 选择建议的学生姓名
+        /// </summary>
+        /// <param name="parameter">命令参数</param>
+        public void SelectSuggestedName(object parameter)
+        {
+            if (parameter != null && parameter is string)
+            {
+                string selectedName = (string)parameter;
+                SearchStudentName = selectedName;
+                SelectedSuggestedName = selectedName;
+                // 选择后清空建议列表
+                SuggestedStudentNames = new List<string>();
             }
         }
     }

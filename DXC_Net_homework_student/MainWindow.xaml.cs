@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +46,17 @@ namespace DXC_Net_homework_student
             {
                 int selectedId = (int)listBox.SelectedItem;
                 _mainViewModel.SelectSuggestedId(selectedId);
+            }
+        }
+
+        // 选择建议的学生姓名
+        private void lstSuggestedNames_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListBox listBox = sender as ListBox;
+            if (listBox != null && listBox.SelectedItem != null)
+            {
+                string selectedName = (string)listBox.SelectedItem;
+                _mainViewModel.SelectSuggestedName(selectedName);
             }
         }
 

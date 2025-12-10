@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +22,12 @@ namespace DXC_Net_homework_student
         {
             get { return _selectSuggestedIdCommand; }
             set { _selectSuggestedIdCommand = value; }
+        }
+
+        public ICommand SelectSuggestedNameCommand
+        {
+            get { return _selectSuggestedNameCommand; }
+            set { _selectSuggestedNameCommand = value; }
         }
         public ICommand SelectCommand
         {
