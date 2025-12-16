@@ -202,6 +202,61 @@ namespace DXC_Net_homework_student
                     query = query.Where(s => s.Sex == SearchStudentSex);
                 }
 
+                // 科目分数范围检索
+                if (!string.IsNullOrWhiteSpace(SearchSubject) && SearchSubject != "(空白)")
+                {
+                   
+                    bool hasMinScore = int.TryParse(MinScore, out int minScore);
+                    bool hasMaxScore = int.TryParse(MaxScore, out int maxScore);
+
+                    // 根据选中的科目和分数范围进行过滤
+                    switch (SearchSubject)
+                    {
+                        case "语文":
+                            if (hasMinScore && hasMaxScore)
+                            {
+                                query = query.Where(s => s.ScoreYW >= minScore && s.ScoreYW <= maxScore);
+                            }
+                            else if (hasMinScore)
+                            {
+                                query = query.Where(s => s.ScoreYW >= minScore);
+                            }
+                            else if (hasMaxScore)
+                            {
+                                query = query.Where(s => s.ScoreYW <= maxScore);
+                            }
+                            break;
+                        case "数学":
+                            if (hasMinScore && hasMaxScore)
+                            {
+                                query = query.Where(s => s.ScoreSX >= minScore && s.ScoreSX <= maxScore);
+                            }
+                            else if (hasMinScore)
+                            {
+                                query = query.Where(s => s.ScoreSX >= minScore);
+                            }
+                            else if (hasMaxScore)
+                            {
+                                query = query.Where(s => s.ScoreSX <= maxScore);
+                            }
+                            break;
+                        case "英语":
+                            if (hasMinScore && hasMaxScore)
+                            {
+                                query = query.Where(s => s.ScoreYY >= minScore && s.ScoreYY <= maxScore);
+                            }
+                            else if (hasMinScore)
+                            {
+                                query = query.Where(s => s.ScoreYY >= minScore);
+                            }
+                            else if (hasMaxScore)
+                            {
+                                query = query.Where(s => s.ScoreYY <= maxScore);
+                            }
+                            break;
+                    }
+                }
+
                 // 执行查询
                 var filteredStudents = query.ToList();
 
@@ -367,17 +422,17 @@ namespace DXC_Net_homework_student
             if (parameter != null && parameter is student)
             {
                 Student = parameter as student;
-                Student.IsSelected = !Student.IsSelected;
+                Student.IsSelected = !Student.IsSelected;//这里有问题，详情见问题日志
 
                 bool temp = Student.IsSelected;
-                if (Student != null && temp == false)
-                {
-                    IsAllSelected = false;
-                }
+                //if (Student != null && temp == false)
+                //{
+                //    IsAllSelected = false;
+                //}
 
-                else if (Student != null && temp == true)
+                 if (Student != null && temp == true)
                 {
-                    Func<bool> func = () =>
+                    Func<bool> func = () =>//判断学生是不是被全部选中
                     {
                         for (int i = 0; i < StudentList.Count; i++)
                         {
@@ -421,7 +476,12 @@ namespace DXC_Net_homework_student
 
             else
             {
-                //todo
+                
+                for (int i = 0; i < StudentList.Count; i++)
+                {
+                    StudentList[i].IsSelected = false;
+                    //OnPropertyChanged("StudentList[" + i + "].IsSelected");这样写没用
+                }
             }
 
 

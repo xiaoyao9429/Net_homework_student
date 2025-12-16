@@ -23,6 +23,9 @@ namespace DXC_Net_homework_student
         private List<string> _suggestedStudentNames; // 模糊匹配的学生姓名列表
         private string _selectedSuggestedName; // 选中的建议姓名
         private string _searchStudentSex; // 搜索学生性别
+        private string _searchSubject; // 搜索科目
+        private string _minScore; // 最小分数
+        private string _maxScore; // 最大分数
 
         private addStudentWindow _addStudentWidonw;
         private ObservableCollection<student> _studentList;//所有学生的信息，展示在UI界面中
@@ -126,6 +129,36 @@ namespace DXC_Net_homework_student
             set
             {
                 _searchStudentSex = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string SearchSubject
+        {
+            get { return _searchSubject; }
+            set
+            {
+                _searchSubject = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string MinScore
+        {
+            get { return _minScore; }
+            set
+            {
+                _minScore = value;
+                OnPropertyChanged();
+            }
+        }
+
+        public string MaxScore
+        {
+            get { return _maxScore; }
+            set
+            {
+                _maxScore = value;
                 OnPropertyChanged();
             }
         }

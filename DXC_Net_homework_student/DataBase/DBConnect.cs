@@ -45,7 +45,7 @@ namespace DXC_Net_homework_student
             mcmd.CommandText = sql;
             SqlDataReader reader = mcmd.ExecuteReader();
             DataTable dt = new DataTable();
-            dt.Load(reader);//这里有异常就会出现问题，下面的close不执行
+            dt.Load(reader);//这里有异常就会出现问题(下面的close不执行)s
 
             reader.Close();
             mconn.Close();

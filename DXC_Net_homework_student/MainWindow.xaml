@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DXC_Net_homework_student"
        
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="650" Width="1150">
     <Window.Resources>
         <local:IntToVisibilityConverter x:Key="IntToVisibilityConverter"/>
         
@@ -91,7 +91,9 @@
                     <!-- 科目 -->
                     <StackPanel Margin="0,0,10,0">
                         <TextBlock Text="科目:" Margin="0,0,5,2" HorizontalAlignment="Left"/>
-                        <ComboBox x:Name="cmb" Height="25" Width="120">
+                        <ComboBox x:Name="cmb" Height="25" Width="120" 
+                                  SelectedValue="{Binding SearchSubject, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                  SelectedValuePath="Content">
                             <ComboBoxItem Content="(空白)"/>
                             <ComboBoxItem Content="语文"/>
                             <ComboBoxItem Content="数学"/>
@@ -103,9 +105,11 @@
                     <StackPanel Margin="15,0,0,0">
                         <TextBlock Text="分数范围:" Margin="0,0,5,2" HorizontalAlignment="Left"/>
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <TextBox x:Name="txtMinScore" Width="50" Height="25" Margin="0,0,5,0" ToolTip="最小分数"/>
+                            <TextBox x:Name="txtMinScore" Width="50" Height="25" Margin="0,0,5,0" 
+                                     ToolTip="最小分数" Text="{Binding MinScore, UpdateSourceTrigger=PropertyChanged}"/>
                             <TextBlock Text="~" VerticalAlignment="Center" Margin="0,0,5,0"/>
-                            <TextBox x:Name="txtMaxScore" Width="50" Height="25" ToolTip="最大分数" />
+                            <TextBox x:Name="txtMaxScore" Width="50" Height="25" 
+                                     ToolTip="最大分数" Text="{Binding MaxScore, UpdateSourceTrigger=PropertyChanged}" />
                         </StackPanel>
                     </StackPanel>
                 </StackPanel>
