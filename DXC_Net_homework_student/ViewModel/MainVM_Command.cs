@@ -9,6 +9,13 @@ namespace DXC_Net_homework_student
 {
     internal partial class MainViewModel
     {
+
+        public ICommand GoToPhotoWindowsCommand { 
+        
+            get { return _gotoPhotoCommand; }
+            set { _gotoPhotoCommand = value; }
+        
+        }
         public ICommand LoadToExcelCommand {
             get { return _loadToExcelCommand; }
             set { _loadToExcelCommand = value; }

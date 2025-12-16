@@ -179,6 +179,7 @@
             <Button x:Name="btnEdit" Content="修改" Width="80" Height="30" Margin="5" Command="{Binding UpdateStuCommand}" />
             <Button x:Name="btnDelete" Content="删除" Width="80" Height="30" Margin="5" Command="{Binding DeleteStuCommand}"/>
             <Button x:Name="btnExport" Content="导出Excel" Width="80" Height="30" Margin="5" Command="{Binding LoadToExcelCommand}"/>
+            <Button x:Name="btnViewPhoto" Content="查看学生照片" Width="100" Height="30" Margin="5" Command="{Binding GoToPhotoWindowsCommand}"/>
         </StackPanel>
     </Grid>
 

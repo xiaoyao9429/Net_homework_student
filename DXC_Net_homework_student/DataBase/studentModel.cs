@@ -65,6 +65,15 @@ namespace DXC_Net_homework_student
             
             foreach (DataRow row in dt.Rows)
             {
+                // 获取照片文件名
+                string photoFileName = row["学生照片"].ToString();
+                
+                // 确保照片文件名包含.png扩展名
+                if (!string.IsNullOrEmpty(photoFileName) && !photoFileName.EndsWith(".png", StringComparison.OrdinalIgnoreCase))
+                {
+                    photoFileName += ".png";
+                }
+                
                 // 从数据库行创建student对象
                 student s = new student(
                     row["姓名"].ToString(),
@@ -74,7 +83,8 @@ namespace DXC_Net_homework_student
                     row["住址"].ToString(),
                     Convert.ToInt32(row["语文"]),
                     Convert.ToInt32(row["数学"]),
-                    Convert.ToInt32(row["英语"])
+                    Convert.ToInt32(row["英语"]),
+                    photoFileName // 使用带有扩展名的照片文件名
                 );
                 s.Id = Convert.ToInt32(row["学生ID"]);
                 students.Add(s);

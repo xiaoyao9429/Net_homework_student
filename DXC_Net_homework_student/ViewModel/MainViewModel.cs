@@ -27,7 +27,9 @@ namespace DXC_Net_homework_student
         private string _minScore; // 最小分数
         private string _maxScore; // 最大分数
 
-        private addStudentWindow _addStudentWidonw;
+        private addStudentWindow _addStudentWidonw;//添加学生的窗口
+        private StudentPhotoWindow _studentPhotoWindow;//展示学生照片的窗口
+
         private ObservableCollection<student> _studentList;//所有学生的信息，展示在UI界面中
         private student _Student;//当前选中的学生，用于更新学生的信息
         private bool _isAllSelected; // 是否全选
@@ -42,6 +44,7 @@ namespace DXC_Net_homework_student
         private ICommand _selectSuggestedNameCommand;//选择建议姓名命令(没用到)
         private ICommand _searchStuCommand;//检索学生命令
         private ICommand _loadToExcelCommand;//导出学生信息为Excel的命令
+        private ICommand _gotoPhotoCommand;//转到学生照片展示窗口的命令
         
 
 
@@ -63,6 +66,7 @@ namespace DXC_Net_homework_student
             SelectSuggestedNameCommand = new RelayCommand(SelectSuggestedName);
             SearchStuCommand = new RelayCommand(SearchStudent);
             LoadToExcelCommand = new RelayCommand(LoadExcelData);
+            GoToPhotoWindowsCommand = new RelayCommand(GoToStudentPhoto);
 
 
             // 加载学生数据

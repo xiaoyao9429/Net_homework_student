@@ -55,3 +55,12 @@ D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\System.M
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\System.Numerics.Vectors.xml
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\System.Security.Cryptography.Xml.xml
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\View\studentPhotoWindow.g.cs
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\View\studentPhotoWindow.baml
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\fyy.png
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\hongtl.png
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\htl.png
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\lyy.png
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\myy.png
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\xyy.png
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_homework_student_Content.g.cs

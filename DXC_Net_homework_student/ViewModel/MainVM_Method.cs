@@ -9,6 +9,13 @@ namespace DXC_Net_homework_student
     internal  partial class MainViewModel
     {
 
+
+        private void GoToStudentPhoto(object parameter)
+        {
+            _studentPhotoWindow = new StudentPhotoWindow();
+            _studentPhotoWindow.Show();
+        }
+
         private void LoadExcelData(object parameter)
         {
             try
