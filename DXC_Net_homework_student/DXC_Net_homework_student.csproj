@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>DXC_Net_homework_student</RootNamespace>
     <AssemblyName>DXC_Net_homework_student</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -160,21 +160,30 @@
     <Content Include="Photo\fyy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Photo\hds.png" />
     <Content Include="Photo\hongtl.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Photo\htl.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Photo\jtl.png" />
+    <Resource Include="Photo\jxy.png" />
+    <Resource Include="Photo\lygz.png" />
+    <Resource Include="Photo\lywz.png" />
     <Content Include="Photo\lyy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Photo\meiyy.png" />
     <Content Include="Photo\myy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Photo\nyy.png" />
+    <Resource Include="Photo\xsg.png" />
     <Content Include="Photo\xyy.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Photo\xyymm.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
