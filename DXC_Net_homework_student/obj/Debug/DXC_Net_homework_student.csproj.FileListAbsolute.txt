@@ -64,3 +64,9 @@ D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\ly
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\myy.png
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\Photo\xyy.png
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\DXC_Net_homework_student_Content.g.cs
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\log4net.dll
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\log4net.pdb
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\log4net.xml
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\bin\Debug\log4net.config
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\View\TeacherInfoWindow.baml
+D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\View\TeacherInfoWindow.g.cs

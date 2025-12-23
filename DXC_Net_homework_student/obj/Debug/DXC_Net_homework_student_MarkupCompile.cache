@@ -1,7 +1,7 @@
 ﻿DXC_Net_homework_student
 
 
-winexe
+exe
 C#
 .cs
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\obj\Debug\
@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\WPF_work\DXC_Net_homework_student\DXC_Net_homework_student\App.xaml
-31627804240
+4-1781819515
 61357237549
-18-775338670
-28-449752481
-MainWindow.xaml;View\addStudentWindow.xaml;View\studentPhotoWindow.xaml;
+27-185729090
+30-1987254481
+MainWindow.xaml;View\addStudentWindow.xaml;View\studentPhotoWindow.xaml;View\TeacherInfoWindow.xaml;
 
 False
 

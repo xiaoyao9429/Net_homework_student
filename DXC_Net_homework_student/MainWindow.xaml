@@ -141,7 +141,7 @@
                             </DataGridTemplateColumn.Header>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <CheckBox IsChecked="{Binding IsSelected}" Command="{Binding DataContext.SelectCommand, 
+                                    <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}" Command="{Binding DataContext.SelectCommand, 
                       RelativeSource={RelativeSource AncestorType=DataGrid}}" CommandParameter="{Binding}"/>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
@@ -175,6 +175,7 @@
 
         <!-- 按钮区域 -->
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="teacher" Content="查看老师信息" Width="80" Height="30" Margin="5" Command="{Binding  ShowTeacherWindowCommand}"/>
             <Button x:Name="btnAdd" Content="新增" Width="80" Height="30" Margin="5" Command="{Binding AddStuCommand}"/>
             <Button x:Name="btnEdit" Content="修改" Width="80" Height="30" Margin="5" Command="{Binding UpdateStuCommand}" />
             <Button x:Name="btnDelete" Content="删除" Width="80" Height="30" Margin="5" Command="{Binding DeleteStuCommand}"/>

@@ -29,6 +29,7 @@ namespace DXC_Net_homework_student
 
         private addStudentWindow _addStudentWidonw;//添加学生的窗口
         private StudentPhotoWindow _studentPhotoWindow;//展示学生照片的窗口
+        private TeacherInfoWindow _teacherInfoWindow; // 教师信息窗口
 
         private ObservableCollection<student> _studentList;//所有学生的信息，展示在UI界面中
         private student _Student;//当前选中的学生，用于更新学生的信息
@@ -40,12 +41,14 @@ namespace DXC_Net_homework_student
         private ICommand _refreshStuCommand;//刷新主窗口命令
         private ICommand _selectAllCommand;//全选学生命令
         private ICommand _selectCommand;//单选学生命令
-        private ICommand _selectSuggestedIdCommand;//选择建议ID命令(没用到)
-        private ICommand _selectSuggestedNameCommand;//选择建议姓名命令(没用到)
+        private ICommand _selectSuggestedIdCommand;//选择建议ID命令
+        private ICommand _selectSuggestedNameCommand;//选择建议姓名命令
         private ICommand _searchStuCommand;//检索学生命令
         private ICommand _loadToExcelCommand;//导出学生信息为Excel的命令
         private ICommand _gotoPhotoCommand;//转到学生照片展示窗口的命令
-        
+        private ICommand _classScoreDetailCommand;//班级成绩详情命令
+        private ICommand _showTeacherInfoCommand;//跳转到教师信息窗口命令
+
 
 
         public MainViewModel()
@@ -67,6 +70,7 @@ namespace DXC_Net_homework_student
             SearchStuCommand = new RelayCommand(SearchStudent);
             LoadToExcelCommand = new RelayCommand(LoadExcelData);
             GoToPhotoWindowsCommand = new RelayCommand(GoToStudentPhoto);
+            ShowTeacherWindowCommand= new RelayCommand(OpenTeacherInfoWindow);
 
 
             // 加载学生数据
@@ -226,3 +230,4 @@ namespace DXC_Net_homework_student
 
     }
 }
+

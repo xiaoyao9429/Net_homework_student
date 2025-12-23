@@ -9,12 +9,23 @@ namespace DXC_Net_homework_student
 {
     internal partial class MainViewModel
     {
+        public ICommand ShowTeacherWindowCommand
+        {
+            get { return _showTeacherInfoCommand; }
+            set { _showTeacherInfoCommand = value; }
+        }
+
 
         public ICommand GoToPhotoWindowsCommand { 
         
             get { return _gotoPhotoCommand; }
             set { _gotoPhotoCommand = value; }
         
+        }
+        public ICommand ClassScoreDetailCommand
+        {
+            get { return _classScoreDetailCommand; }
+            set { _classScoreDetailCommand = value; }
         }
         public ICommand LoadToExcelCommand {
             get { return _loadToExcelCommand; }
@@ -91,4 +102,5 @@ namespace DXC_Net_homework_student
         }
     }
 }
+
 

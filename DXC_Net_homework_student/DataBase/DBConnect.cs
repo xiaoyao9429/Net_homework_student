@@ -19,7 +19,7 @@ namespace DXC_Net_homework_student
         {
             mconn.ConnectionString = "Server=localhost;Database=TestDB;Trusted_Connection=true";
             mcmd.Connection = mconn;
-            mcmd.CommandText = "select * from student";
+            mcmd.CommandText = "select * from student";//默认语句
         }
 
 

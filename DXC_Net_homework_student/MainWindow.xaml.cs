@@ -12,15 +12,17 @@ namespace DXC_Net_homework_student
     public partial  class MainWindow:Window
     {
         private MainViewModel _mainViewModel;
+     
 
         public MainWindow()
         {
             _mainViewModel = new MainViewModel();
             InitializeComponent();
             this.DataContext = _mainViewModel;
+
         }
 
-
+       
 
 
         // 双击学生

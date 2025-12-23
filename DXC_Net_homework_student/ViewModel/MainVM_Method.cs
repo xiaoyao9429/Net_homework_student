@@ -16,6 +16,20 @@ namespace DXC_Net_homework_student
             _studentPhotoWindow.Show();
         }
 
+        private void OpenTeacherInfoWindow(object parameter)
+        {
+            if (_teacherInfoWindow == null || !_teacherInfoWindow.IsVisible)
+            {
+                _teacherInfoWindow = new TeacherInfoWindow();
+                _teacherInfoWindow.Show();
+            }
+            else
+            {
+                _teacherInfoWindow.Activate();
+            }
+        }
+
+
         private void LoadExcelData(object parameter)
         {
             try
@@ -174,6 +188,270 @@ namespace DXC_Net_homework_student
         }
 
 
+        //private void SearchStudent(object parameter)
+        //{
+        //    try
+        //    {
+        //        // 无需检查是否至少输入了一个检索条件
+        //        // 当所有条件都为空时，将返回所有学生信息
+
+        //        // 从数据库加载所有学生数据
+        //        studentModel model = new studentModel();
+        //        List<student> allStudents = model.GetAllStudents();
+
+        //        // 构建查询条件
+        //        var query = allStudents.AsQueryable();
+
+        //        // 学生ID检索
+        //        if (!string.IsNullOrWhiteSpace(SearchStudentId))
+        //        {
+        //            if (int.TryParse(SearchStudentId, out int searchId))
+        //            {
+        //                query = query.Where(s => s.Id == searchId);
+        //            }
+        //        }
+
+        //        // 学生姓名模糊检索
+        //        if (!string.IsNullOrWhiteSpace(SearchStudentName))
+        //        {
+        //            query = query.Where(s => s.Name.Equals(SearchStudentName));
+        //        }
+
+        //        // 学生性别检索 - 如果性别不为空则根据性别过滤，为空则忽略性别条件
+        //        if (!string.IsNullOrWhiteSpace(SearchStudentSex))
+        //        {
+        //            query = query.Where(s => s.Sex == SearchStudentSex);
+        //        }
+
+        //        // 科目分数范围检索
+        //        if (!string.IsNullOrWhiteSpace(SearchSubject) && SearchSubject != "(空白)")
+        //        {
+                   
+        //            bool hasMinScore = int.TryParse(MinScore, out int minScore);
+        //            bool hasMaxScore = int.TryParse(MaxScore, out int maxScore);
+
+        //            // 根据选中的科目和分数范围进行过滤
+        //            switch (SearchSubject)
+        //            {
+        //                case "语文":
+        //                    if (hasMinScore && hasMaxScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreYW >= minScore && s.ScoreYW <= maxScore);
+        //                    }
+        //                    else if (hasMinScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreYW >= minScore);
+        //                    }
+        //                    else if (hasMaxScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreYW <= maxScore);
+        //                    }
+        //                    break;
+        //                case "数学":
+        //                    if (hasMinScore && hasMaxScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreSX >= minScore && s.ScoreSX <= maxScore);
+        //                    }
+        //                    else if (hasMinScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreSX >= minScore);
+        //                    }
+        //                    else if (hasMaxScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreSX <= maxScore);
+        //                    }
+        //                    break;
+        //                case "英语":
+        //                    if (hasMinScore && hasMaxScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreYY >= minScore && s.ScoreYY <= maxScore);
+        //                    }
+        //                    else if (hasMinScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreYY >= minScore);
+        //                    }
+        //                    else if (hasMaxScore)
+        //                    {
+        //                        query = query.Where(s => s.ScoreYY <= maxScore);
+        //                    }
+        //                    break;
+        //            }
+        //        }
+
+        //        // 执行查询
+        //        var filteredStudents = query.ToList();
+
+        //        // 清空现有列表并添加过滤后的学生
+        //        StudentList.Clear();
+        //        foreach (var student in filteredStudents)
+        //        {
+        //            StudentList.Add(student);
+        //        }
+
+        //        // 如果没有找到匹配的学生，显示提示
+        //        if (StudentList.Count == 0)
+        //        {
+        //            System.Windows.MessageBox.Show("未找到符合条件的学生！");
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Console.WriteLine("检索学生失败: " + ex.Message);
+        //        System.Windows.MessageBox.Show("检索学生失败: " + ex.Message);
+        //    }
+        //}
+        private void OpenAddStudentWindow(object parameter)
+        {
+            _addStudentWidonw = new addStudentWindow();
+
+            _addStudentWidonw.Closed += (sender, e) =>// // 当窗口关闭时刷新学生列表
+            {
+
+                LoadStudents();
+            };
+
+            _addStudentWidonw.Show();
+        }
+
+        /// <summary>
+        /// 删除选中的学生
+        /// </summary>
+        /// <param name="parameter">命令参数</param>
+        private void DeleteSelectedStudents(object parameter)
+        {
+            try
+            {
+                // 获取所有被选中的学生
+                var selectedStudents = StudentList.Where(s => s.IsSelected).ToList();
+
+                if (selectedStudents.Count == 0)
+                {
+                    System.Windows.MessageBox.Show("请先选择要删除的学生！");
+                    return;
+                }
+
+                // 显示确认对话框
+                var result = System.Windows.MessageBox.Show(
+                    $"确定要删除选中的{selectedStudents.Count}名学生吗？",
+                    "确认删除",
+                    System.Windows.MessageBoxButton.YesNo,
+                    System.Windows.MessageBoxImage.Warning);
+
+                if (result == System.Windows.MessageBoxResult.Yes)
+                {
+                    studentModel model = new studentModel();
+                    int deletedCount = 0;
+
+                    // 逐个删除学生
+                    foreach (var student in selectedStudents)
+                    {
+                        model.deleteStudent(student.Id);
+                        deletedCount++;
+                    }
+
+                    // 重新加载学生列表
+                    LoadStudents();
+
+                    // 重置全选状态
+                    _isAllSelected = false;
+                    OnPropertyChanged("IsAllSelected");
+
+                    System.Windows.MessageBox.Show($"成功删除{deletedCount}名学生！");
+                    
+                    // 记录批量删除学生日志
+                    Log.info(string.Format("成功批量删除学生，共{0}名学生", deletedCount));
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("删除学生失败: " + ex.Message);
+                System.Windows.MessageBox.Show("删除学生失败: " + ex.Message);
+                
+                // 记录批量删除学生异常日志
+                Log.error(string.Format("批量删除学生失败：错误信息={0}", ex.Message));
+            }
+        }
+
+        /// <summary>
+        /// 更新学生信息
+        /// </summary>
+        /// <param name="parameter">命令参数</param>
+        private void UpdateStudent(object parameter)
+        {
+            try
+            {
+                // 获取所有被选中的学生
+                var selectedStudents = StudentList.Where(s => s.IsSelected).ToList();
+
+                if (selectedStudents.Count == 0)
+                {
+                    System.Windows.MessageBox.Show("请先选择要修改的学生信息！");
+                    return;
+                }
+
+                studentModel model = new studentModel();
+                int updatedCount = 0;
+
+                // 逐个更新学生信息
+                foreach (var student in selectedStudents)
+                {
+                    model.updateStudent(student);
+                    updatedCount++;
+                }
+
+                // 更新成功后刷新学生列表
+                LoadStudents();
+
+                // 显示更新成功提示
+                System.Windows.MessageBox.Show($"成功更新{updatedCount}名学生信息！");
+                
+                // 记录批量更新学生日志
+                Log.info(string.Format("成功批量更新学生，共{0}名学生", updatedCount));
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("更新学生信息失败: " + ex.Message);
+                System.Windows.MessageBox.Show("更新学生信息失败: " + ex.Message);
+                
+                // 记录批量更新学生异常日志
+                Log.error(string.Format("批量更新学生失败：错误信息={0}", ex.Message));
+            }
+        }
+
+
+
+        /// <summary>
+        /// 从数据库加载学生数据
+        /// </summary>
+        public void LoadStudents()
+        {
+            try
+            {
+                studentModel model = new studentModel();
+                List<student> studentList = model.GetAllStudents();
+
+                // 清空现有数据
+                StudentList.Clear();
+
+                // 将student实体转换为StudentViewModel并添加到集合中
+                foreach (var student in studentList)
+                {
+                    StudentList.Add(student);
+                }
+                
+                // 记录加载学生列表日志
+                Log.info(string.Format("成功加载学生列表，共{0}条记录", StudentList.Count));
+            }
+            catch (Exception ex)
+            {
+                // 实际应用中应使用日志记录错误
+                Console.WriteLine("加载学生数据失败: " + ex.Message);
+                
+                // 记录加载学生列表异常日志
+                Log.error(string.Format("加载学生列表失败：错误信息={0}", ex.Message));
+            }
+        }
+
         private void SearchStudent(object parameter)
         {
             try
@@ -212,7 +490,7 @@ namespace DXC_Net_homework_student
                 // 科目分数范围检索
                 if (!string.IsNullOrWhiteSpace(SearchSubject) && SearchSubject != "(空白)")
                 {
-                   
+                    
                     bool hasMinScore = int.TryParse(MinScore, out int minScore);
                     bool hasMaxScore = int.TryParse(MaxScore, out int maxScore);
 
@@ -279,147 +557,22 @@ namespace DXC_Net_homework_student
                 {
                     System.Windows.MessageBox.Show("未找到符合条件的学生！");
                 }
+                
+                // 记录搜索学生日志
+                string searchConditions = string.Format("ID={0}, 姓名={1}, 性别={2}, 科目={3}, 分数范围={4}-{5}", 
+                    SearchStudentId ?? "", SearchStudentName ?? "", SearchStudentSex ?? "", 
+                    SearchSubject ?? "", MinScore ?? "", MaxScore ?? "");
+                Log.info(string.Format("成功搜索学生，条件：{0}，找到{1}条记录", searchConditions, StudentList.Count));
             }
             catch (Exception ex)
             {
                 Console.WriteLine("检索学生失败: " + ex.Message);
                 System.Windows.MessageBox.Show("检索学生失败: " + ex.Message);
+                
+                // 记录搜索学生异常日志
+                Log.error(string.Format("搜索学生失败：错误信息={0}", ex.Message));
             }
         }
-        private void OpenAddStudentWindow(object parameter)
-        {
-            _addStudentWidonw = new addStudentWindow();
-
-            _addStudentWidonw.Closed += (sender, e) =>// // 当窗口关闭时刷新学生列表
-            {
-
-                LoadStudents();
-            };
-
-            _addStudentWidonw.Show();
-        }
-
-        /// <summary>
-        /// 删除选中的学生
-        /// </summary>
-        /// <param name="parameter">命令参数</param>
-        private void DeleteSelectedStudents(object parameter)
-        {
-            try
-            {
-                // 获取所有被选中的学生
-                var selectedStudents = StudentList.Where(s => s.IsSelected).ToList();
-
-                if (selectedStudents.Count == 0)
-                {
-                    System.Windows.MessageBox.Show("请先选择要删除的学生！");
-                    return;
-                }
-
-                // 显示确认对话框
-                var result = System.Windows.MessageBox.Show(
-                    $"确定要删除选中的{selectedStudents.Count}名学生吗？",
-                    "确认删除",
-                    System.Windows.MessageBoxButton.YesNo,
-                    System.Windows.MessageBoxImage.Warning);
-
-                if (result == System.Windows.MessageBoxResult.Yes)
-                {
-                    studentModel model = new studentModel();
-                    int deletedCount = 0;
-
-                    // 逐个删除学生
-                    foreach (var student in selectedStudents)
-                    {
-                        model.deleteStudent(student.Id);
-                        deletedCount++;
-                    }
-
-                    // 重新加载学生列表
-                    LoadStudents();
-
-                    // 重置全选状态
-                    _isAllSelected = false;
-                    OnPropertyChanged("IsAllSelected");
-
-                    System.Windows.MessageBox.Show($"成功删除{deletedCount}名学生！");
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("删除学生失败: " + ex.Message);
-                System.Windows.MessageBox.Show("删除学生失败: " + ex.Message);
-            }
-        }
-
-        /// <summary>
-        /// 更新学生信息
-        /// </summary>
-        /// <param name="parameter">命令参数</param>
-        private void UpdateStudent(object parameter)
-        {
-            try
-            {
-                // 获取所有被选中的学生
-                var selectedStudents = StudentList.Where(s => s.IsSelected).ToList();
-
-                if (selectedStudents.Count == 0)
-                {
-                    System.Windows.MessageBox.Show("请先选择要修改的学生信息！");
-                    return;
-                }
-
-                studentModel model = new studentModel();
-                int updatedCount = 0;
-
-                // 逐个更新学生信息
-                foreach (var student in selectedStudents)
-                {
-                    model.updateStudent(student);
-                    updatedCount++;
-                }
-
-                // 更新成功后刷新学生列表
-                LoadStudents();
-
-                // 显示更新成功提示
-                System.Windows.MessageBox.Show($"成功更新{updatedCount}名学生信息！");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("更新学生信息失败: " + ex.Message);
-                System.Windows.MessageBox.Show("更新学生信息失败: " + ex.Message);
-            }
-        }
-
-
-
-        /// <summary>
-        /// 从数据库加载学生数据
-        /// </summary>
-        public void LoadStudents()
-        {
-            try
-            {
-                studentModel model = new studentModel();
-                List<student> studentList = model.GetAllStudents();
-
-                // 清空现有数据
-                StudentList.Clear();
-
-                // 将student实体转换为StudentViewModel并添加到集合中
-                foreach (var student in studentList)
-                {
-                    StudentList.Add(student);
-                }
-            }
-            catch (Exception ex)
-            {
-                // 实际应用中应使用日志记录错误
-                Console.WriteLine("加载学生数据失败: " + ex.Message);
-            }
-        }
-
         public void RefreshList(object parameter)
         {
             LoadStudents();

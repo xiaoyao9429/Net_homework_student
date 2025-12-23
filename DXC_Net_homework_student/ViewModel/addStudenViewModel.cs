@@ -126,11 +126,17 @@ namespace DXC_Net_homework_student
                 
                 MessageBox.Show("学生信息保存成功！", "提示", MessageBoxButton.OK, MessageBoxImage.Information); 
                 
-               
+                // 记录添加学生日志
+                Log.info(string.Format("成功添加学生：姓名={0}, 性别={1}, 出生日期={2}, 电话={3}, 地址={4}, 语文={5}, 数学={6}, 英语={7}", 
+                    Name, Sex, Birthday, Phone, Address, ScoreYW, ScoreSX, ScoreYY));
             } 
             catch (Exception ex)
             { 
                 MessageBox.Show("保存失败：" + ex.Message, "错误", MessageBoxButton.OK, MessageBoxImage.Error); 
+                
+                // 记录添加学生异常日志
+                Log.error(string.Format("添加学生失败：姓名={0}, 性别={1}, 错误信息={2}", 
+                    Name, Sex, ex.Message));
             }
         }
 
