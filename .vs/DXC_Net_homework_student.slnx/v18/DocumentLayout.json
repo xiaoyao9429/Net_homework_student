@@ -3,56 +3,96 @@
   "WorkspaceRootPath": "D:\\WPF_work\\DXC_Net_homework_student\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\viewmodel\\mainvm_command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\mainvm_command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\database\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\database\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|d:\\wpf_work\\dxc_net_homework_student\\dxc_net_homework_student\\view\\teacherinfowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\teacherinfowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\database\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\database\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|d:\\wpf_work\\dxc_net_homework_student\\dxc_net_homework_student\\view\\addstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\addstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|d:\\wpf_work\\dxc_net_homework_student\\dxc_net_homework_student\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\log\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\log\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\viewmodel\\mainvm_method.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\mainvm_method.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|d:\\wpf_work\\dxc_net_homework_student\\dxc_net_homework_student\\viewmodel\\teacherinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\teacherinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|d:\\wpf_work\\dxc_net_homework_student\\dxc_net_homework_student\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|d:\\wpf_work\\dxc_net_homework_student\\dxc_net_homework_student\\view\\teacherinfowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\teacherinfowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\viewmodel\\addstudenviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\addstudenviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|d:\\wpf_work\\dxc_net_homework_student\\dxc_net_homework_student\\publictool\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\view\\addstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\addstudentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\view\\studentphotowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\studentphotowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\publictool\\photopathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\publictool\\photopathconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\view\\teacherinfowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\teacherinfowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\publictool\\inttovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\publictool\\inttovisibilityconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\view\\teacherinfowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\teacherinfowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\view\\studentphotowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\studentphotowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\view\\addstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\view\\addstudentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\database\\table\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\database\\table\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\viewmodel\\teacherinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\teacherinfoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\publictool\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\publictool\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|d:\\wpf_work\\dxc_net_homework_student\\dxc_net_homework_student\\database\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\database\\dbconnect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\viewmodel\\mainvm_command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\mainvm_command.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\viewmodel\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\database\\coursemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,16 +107,8 @@
       "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\database\\teachermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\database\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\database\\studentmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\database\\table\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\database\\table\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\database\\table\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\database\\table\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\database\\table\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -89,18 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\log4net.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\log\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\log\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|solutionrelative:dxc_net_homework_student\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69F7ABC4-2AB0-49EC-A3B3-20A4102845EF}|DXC_Net_homework_student\\DXC_Net_homework_student.csproj|D:\\WPF_work\\DXC_Net_homework_student\\dxc_net_homework_student\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +138,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,79 +154,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "addStudentWindow.xaml",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\addStudentWindow.xaml",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\addStudentWindow.xaml",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\addStudentWindow.xaml",
-              "RelativeToolTip": "DXC_Net_homework_student\\View\\addStudentWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-23T13:46:45.376Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "Log.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\log\\Log.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\log\\Log.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\log\\Log.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\log\\Log.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T02:04:55.864Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\MainWindow.xaml.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAHAAAAAAAAAA==",
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T02:10:27.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainViewModel.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainViewModel.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\MainViewModel.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainViewModel.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\MainViewModel.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAMwEgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:02:22.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainVM_Command.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainVM_Command.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\MainVM_Command.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainVM_Command.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\MainVM_Command.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:02:39.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TeacherInfoWindow.xaml",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml",
-              "RelativeToolTip": "DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-23T13:35:47.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MainVM_Method.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainVM_Method.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\MainVM_Method.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainVM_Method.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\MainVM_Method.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:03:46.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T01:46:32.012Z"
             },
             {
               "$type": "Document",
@@ -217,51 +185,155 @@
               "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\MainWindow.xaml",
               "RelativeToolTip": "DXC_Net_homework_student\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-23T02:10:23.405Z",
+              "WhenOpened": "2025-12-24T02:24:10.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\App.config",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\App.config",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\App.config",
+              "RelativeToolTip": "DXC_Net_homework_student\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-23T01:54:54.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBConnect.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\DBConnect.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\DBConnect.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\DBConnect.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\DBConnect.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T07:54:20.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "studentModel.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\studentModel.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\studentModel.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\studentModel.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\studentModel.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwGIAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:34:50.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "TeacherInfoViewModel.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\TeacherInfoViewModel.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\TeacherInfoViewModel.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\TeacherInfoViewModel.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\TeacherInfoViewModel.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Title": "addStudenViewModel.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\addStudenViewModel.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\addStudenViewModel.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\addStudenViewModel.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\addStudenViewModel.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T13:37:05.318Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T01:16:13.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainVM_Method.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainVM_Method.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\MainVM_Method.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainVM_Method.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\MainVM_Method.cs",
+              "ViewState": "AgIAAEMBAAAAAAAAAAAMwFUBAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:03:46.712Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\ViewModelBase.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\ViewModelBase.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\ViewModelBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T13:43:49.448Z",
-              "EditorCaption": ""
+              "Title": "addStudentWindow.xaml",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\addStudentWindow.xaml",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\addStudentWindow.xaml",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\addStudentWindow.xaml",
+              "RelativeToolTip": "DXC_Net_homework_student\\View\\addStudentWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T13:46:45.376Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "TeacherInfoWindow.xaml.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "studentPhotoWindow.xaml",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\studentPhotoWindow.xaml",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\studentPhotoWindow.xaml",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\studentPhotoWindow.xaml",
+              "RelativeToolTip": "DXC_Net_homework_student\\View\\studentPhotoWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-24T06:27:57.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PhotoPathConverter.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\PublicTool\\PhotoPathConverter.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\PublicTool\\PhotoPathConverter.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\PublicTool\\PhotoPathConverter.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\PublicTool\\PhotoPathConverter.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T13:35:18.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T06:48:10.079Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "TeacherInfoWindow.xaml",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml",
+              "RelativeToolTip": "DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T13:35:47.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IntToVisibilityConverter.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\PublicTool\\IntToVisibilityConverter.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\PublicTool\\IntToVisibilityConverter.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\PublicTool\\IntToVisibilityConverter.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\PublicTool\\IntToVisibilityConverter.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T06:48:41.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "addStudentWindow.xaml.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\addStudentWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\addStudentWindow.xaml.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\addStudentWindow.xaml.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\View\\addStudentWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T06:41:00.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "student.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\table\\student.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\table\\student.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\table\\student.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\table\\student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T07:54:21.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\PublicTool\\RelayCommand.cs",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\PublicTool\\RelayCommand.cs",
@@ -269,25 +341,95 @@
               "RelativeToolTip": "DXC_Net_homework_student\\PublicTool\\RelayCommand.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T13:24:14.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "addStudenViewModel.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\addStudenViewModel.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\addStudenViewModel.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\addStudenViewModel.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\addStudenViewModel.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAIwHsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T01:16:13.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T13:24:14.955Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\MainViewModel.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIAwwB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:02:22.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TeacherInfoWindow.xaml.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\View\\TeacherInfoWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:35:18.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "studentPhotoWindow.xaml.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\studentPhotoWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\View\\studentPhotoWindow.xaml.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\View\\studentPhotoWindow.xaml.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\View\\studentPhotoWindow.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T06:41:02.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainVM_Command.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainVM_Command.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\MainVM_Command.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\MainVM_Command.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\MainVM_Command.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T03:02:39.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\MainWindow.xaml.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T02:10:27.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TeacherInfoViewModel.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\TeacherInfoViewModel.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\TeacherInfoViewModel.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\TeacherInfoViewModel.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\TeacherInfoViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:37:05.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ViewModelBase.cs",
+              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\ViewModelBase.cs",
+              "RelativeDocumentMoniker": "DXC_Net_homework_student\\ViewModel\\ViewModelBase.cs",
+              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\ViewModel\\ViewModelBase.cs",
+              "RelativeToolTip": "DXC_Net_homework_student\\ViewModel\\ViewModelBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:43:49.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "courseModel.cs",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\courseModel.cs",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\courseModel.cs",
@@ -295,38 +437,11 @@
               "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\courseModel.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAgwEoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T08:09:03.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T08:09:03.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DBConnect.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\DBConnect.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\DBConnect.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\DBConnect.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\DBConnect.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T07:54:20.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "student.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\table\\student.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\table\\student.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\table\\student.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\table\\student.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T07:54:21.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "course.cs",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\table\\course.cs",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\table\\course.cs",
@@ -334,12 +449,11 @@
               "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\table\\course.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T07:53:25.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T07:53:25.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "teacher_course_relation.cs",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\table\\teacher_course_relation.cs",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\table\\teacher_course_relation.cs",
@@ -347,12 +461,11 @@
               "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\table\\teacher_course_relation.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwB8AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T08:04:00.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T08:04:00.817Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
               "Title": "teacher_course_relationModel.cs",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\teacher_course_relationModel.cs",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\teacher_course_relationModel.cs",
@@ -360,12 +473,11 @@
               "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\teacher_course_relationModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAK8AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T08:11:05.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T08:11:05.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 25,
               "Title": "teacherModel.cs",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\teacherModel.cs",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\teacherModel.cs",
@@ -373,25 +485,11 @@
               "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\teacherModel.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAkwGYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T08:09:42.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T08:09:42.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "studentModel.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\studentModel.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\studentModel.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\studentModel.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\studentModel.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAgwDcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T03:34:50.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "teacher.cs",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\DataBase\\table\\teacher.cs",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\DataBase\\table\\teacher.cs",
@@ -399,38 +497,11 @@
               "RelativeToolTip": "DXC_Net_homework_student\\DataBase\\table\\teacher.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T07:56:33.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T07:56:33.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Log.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\log\\Log.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\log\\Log.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\log\\Log.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\log\\Log.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T02:04:55.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "App.config",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\App.config",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\App.config",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\App.config",
-              "RelativeToolTip": "DXC_Net_homework_student\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-12-23T01:54:54.728Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "log4net.config",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\log4net.config",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\log4net.config",
@@ -438,25 +509,11 @@
               "RelativeToolTip": "DXC_Net_homework_student\\log4net.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-12-23T01:39:07.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T01:39:07.977Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\Properties\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "DXC_Net_homework_student\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\Properties\\AssemblyInfo.cs",
-              "RelativeToolTip": "DXC_Net_homework_student\\Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADUAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T01:46:32.012Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 30,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\App.xaml.cs",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\App.xaml.cs",
@@ -464,20 +521,18 @@
               "RelativeToolTip": "DXC_Net_homework_student\\App.xaml.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T01:55:22.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T01:55:22.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 31,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\App.xaml",
               "RelativeDocumentMoniker": "DXC_Net_homework_student\\App.xaml",
               "ToolTip": "D:\\WPF_work\\DXC_Net_homework_student\\DXC_Net_homework_student\\App.xaml",
               "RelativeToolTip": "DXC_Net_homework_student\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-23T01:54:37.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T01:54:37.104Z"
             }
           ]
         }

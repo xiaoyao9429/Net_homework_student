@@ -54,7 +54,7 @@
 
         <!-- 表单区域 -->
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
-            <Label Content="学生信息录入" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#6B8E23"/>
+            <Label  Content="学生信息录入" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Foreground="#6B8E23"/>
         </StackPanel>
 
         <!-- 表单区域 -->
@@ -88,7 +88,7 @@
             </ComboBox>
 
             <!-- 出生年月 -->
-            <Label Grid.Row="2" Grid.Column="0" Content="出生年月:" Target="{Binding ElementName=txtBirthday}"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="出生年月:" Target="{Binding ElementName=txtBirthday }"/>
             <TextBox Grid.Row="2" Grid.Column="1" x:Name="txtBirthday" ToolTip="格式如：2000-01-01" Text="{Binding Birthday}"/>
 
             <!-- 手机号 -->

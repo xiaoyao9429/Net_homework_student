@@ -11,7 +11,7 @@
         <local:IntToVisibilityConverter x:Key="IntToVisibilityConverter"/>
         
     </Window.Resources>
-    <Grid Margin="10" ShowGridLines="True" Background="#F5F5DC">
+    <Grid Margin="10"  Background="#F5F5DC">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -175,7 +175,7 @@
 
         <!-- 按钮区域 -->
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Button x:Name="teacher" Content="查看老师信息" Width="80" Height="30" Margin="5" Command="{Binding  ShowTeacherWindowCommand}"/>
+            <Button x:Name="teacher" Content="查看老师信息" Width="80" Height="30" Margin="5" Command="{Binding  ShowTeacherWindowCommand}" />
             <Button x:Name="btnAdd" Content="新增" Width="80" Height="30" Margin="5" Command="{Binding AddStuCommand}"/>
             <Button x:Name="btnEdit" Content="修改" Width="80" Height="30" Margin="5" Command="{Binding UpdateStuCommand}" />
             <Button x:Name="btnDelete" Content="删除" Width="80" Height="30" Margin="5" Command="{Binding DeleteStuCommand}"/>

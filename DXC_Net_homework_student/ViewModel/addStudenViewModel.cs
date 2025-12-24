@@ -114,6 +114,13 @@ namespace DXC_Net_homework_student
                 MessageBox.Show("姓名和性别不能为空！", "提示", MessageBoxButton.OK, MessageBoxImage.Warning); 
                 return; 
             }
+            
+            // 电话号码验证
+            if (string.IsNullOrEmpty(Phone) || Phone.Length != 11 || !Phone.All(char.IsDigit))
+            { 
+                MessageBox.Show("请输入有效的11位手机号码！", "提示", MessageBoxButton.OK, MessageBoxImage.Warning); 
+                return; 
+            }
 
             try
             { 
